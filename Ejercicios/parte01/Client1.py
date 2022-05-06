@@ -7,7 +7,7 @@ ServerPort = 10023
 
 #IDCliente|IP
 IDCliente = '00205604'
-IP = socket.gethostbyname(socket.gethostname("rpi3.local"))
+IP = socket.gethostbyname("rpi3.local")
 
 print(f"Establishing connection from {IP} to {ServerIP}:{ServerPort}")
 
