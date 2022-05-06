@@ -12,7 +12,11 @@ IP = socket.gethostbyname(socket.gethostname())
 print(f"Establishing connection from {IP} to {ServerIP}:{ServerPort}")
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+s.settimeout(960.0)
 s.connect((ServerIP, ServerPort))
+s.settimeout(None)
+
 
 if s is not None:
     clientInfo = f'{IDCliente}|{IP}'
