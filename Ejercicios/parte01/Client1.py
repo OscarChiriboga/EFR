@@ -9,6 +9,8 @@ ServerPort = 10023
 IDCliente = '00205604'
 IP = socket.gethostbyname(socket.gethostname())
 
+print(f"Establishing connection to {ServerIP}:{ServerPort}")
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((ServerIP, ServerPort))
 
