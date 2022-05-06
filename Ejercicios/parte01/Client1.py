@@ -2,7 +2,7 @@ import socket
 import sys
 
 
-ServerIP = '172.21.13.22'
+ServerIP = '172.21.13.147'
 ServerPort = 10023
 
 #IDCliente|IP
